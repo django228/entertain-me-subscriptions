@@ -1,0 +1,127 @@
+.sidebar {
+  background: #fff;
+  border-right: 1px solid #eee;
+  padding: 128px 48px 48px 48px;
+  display: flex;
+  flex-direction: column;
+  min-width: 300px;
+  width: 300px;
+  min-height: 100vh;
+
+  @media (max-width: 768px) {
+    width: 100%;
+    min-width: 100%;
+    padding: 40px 20px;
+    border-right: none;
+    border-bottom: 1px solid #eee;
+    min-height: auto;
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+  }
+
+  &__header {
+    margin-bottom: 64px;
+  }
+
+  &__logo {
+    display: flex;
+    justify-content: center;
+    
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+  }
+
+  &__question {
+    margin-bottom: 64px;
+  }
+
+  &__subtitle {
+    font-size: 16px;
+    color: #333333;
+    line-height: 1.4;
+    text-align: center;
+  }
+
+  &__user-info {
+    flex: 1;
+    margin-bottom: 32px;
+  }
+
+  &__email {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 16px;
+    font-weight: 500;
+  }
+
+  &__cta {
+    font-size: 14px;
+    color: #888888;
+    margin-top: 16px;
+    margin-bottom: 50px;
+    line-height: 1.4;
+  }
+
+  &__cta-subscribe {
+    color: #3460F1;
+  }
+
+  &__footer {
+    margin-top: auto;
+    width: 224px;
+    height: 138px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  &__company {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    
+    &-info {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+    
+    &-name {
+      font-size: 12px;
+      font-weight: 600;
+      margin: 0;
+      color: #666666;
+    }
+  }
+
+  &__address {
+    font-size: 12px;
+    color: #888888;
+    line-height: 1.4;
+    margin: 0;
+  }
+
+  &__contact {
+    font-size: 12px;
+    color: #888888;
+    margin: 0;
+    text-decoration: underline;
+  }
+
+  &__privacy {
+    font-size: 12px;
+    color: #888888;
+    text-decoration: underline;
+    margin: 0;
+
+    &:hover {
+      color: #3460F1;
+    }
+  }
+}
