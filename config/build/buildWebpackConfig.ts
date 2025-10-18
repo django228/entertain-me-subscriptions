@@ -15,7 +15,7 @@ export function buildWebpackConfig(options: BuildOptions): webpack.Configuration
             filename: 'bundle.js',
             path: paths.build,
             clean: true,
-            publicPath: options.isDev ? '/' : (process.env.GITHUB_PAGES ? '/RekaTest_frontend/' : '/'),
+            publicPath: options.isDev ? '/' : '/entertain-me-subscriptions/',
         },
         plugins: buildPlugins(options),
         module: {
